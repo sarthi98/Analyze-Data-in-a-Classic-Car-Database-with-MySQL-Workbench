@@ -1,0 +1,6 @@
+/*  3 Total orders of each one type */
+
+SELECT p.productLine, COUNT(o.orderNumber) AS order_count
+FROM products p
+JOIN orderdetails o ON p.productCode = o.productCode
+GROUP BY p.productLine;
