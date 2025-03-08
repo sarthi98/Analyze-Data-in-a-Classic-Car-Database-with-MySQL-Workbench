@@ -1,0 +1,6 @@
+/*  Total Revenue from Sales */
+
+SELECT 
+    SUM(o.quantityOrdered * o.priceEach) AS totalprice
+FROM
+    orderdetails o;
