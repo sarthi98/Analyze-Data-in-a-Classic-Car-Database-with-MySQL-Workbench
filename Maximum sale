@@ -1,4 +1,4 @@
-/* 4 Maximum sale category */
+/* Maximum sale category */
 
 
 SELECT p.productLine, COUNT(o.orderNumber) AS order_count
