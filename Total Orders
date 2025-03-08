@@ -1,5 +1,6 @@
 /* 1 Total Number of orders*/
 
+
 SELECT 
     COUNT(orderNumber)
 FROM
