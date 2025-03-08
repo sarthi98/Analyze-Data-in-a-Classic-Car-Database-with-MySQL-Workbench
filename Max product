@@ -1,5 +1,6 @@
 /* 2 Max quantity product */
 
+
 SELECT 
     COUNT(o.orderNumber),
     SUM(o.quantityOrdered),
