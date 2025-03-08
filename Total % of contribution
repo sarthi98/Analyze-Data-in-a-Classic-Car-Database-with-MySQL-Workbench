@@ -1,0 +1,18 @@
+/*   Total % revenue contribution of Classic Cars */
+
+
+SELECT 100.0 * (SELECT 
+    SUM(quantityOrdered * priceEach) AS totalprice
+FROM
+    orderdetails
+WHERE
+    productCode IN (SELECT 
+            productCode
+        FROM
+            products
+        WHERE
+            productLine = 'Classic cars'))/ (SELECT 
+    SUM(o.quantityOrdered * o.priceEach) AS totalprice
+FROM
+    orderdetails o
+) as Percentage
