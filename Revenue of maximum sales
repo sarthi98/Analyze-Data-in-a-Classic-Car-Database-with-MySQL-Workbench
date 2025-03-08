@@ -1,0 +1,14 @@
+/* Revenue of maximum sales category */
+
+SELECT 
+    SUM(quantityOrdered * priceEach) AS totalprice
+FROM
+    orderdetails
+WHERE
+    productCode IN (SELECT 
+            productCode
+        FROM
+            products
+        WHERE
+            productLine = 'Classic cars');
+            
