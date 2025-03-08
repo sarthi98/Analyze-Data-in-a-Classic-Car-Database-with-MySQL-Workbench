@@ -1,4 +1,4 @@
-/* 5 Minimum sale category */
+/* Minimum sale category */
 
 SELECT p.productLine, COUNT(o.orderNumber) AS order_count
 FROM products p
