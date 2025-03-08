@@ -1,0 +1,13 @@
+/* 2 Max quantity product */
+
+SELECT 
+    COUNT(o.orderNumber),
+    SUM(o.quantityOrdered),
+    max(p.productline),
+    max(p.productName)
+FROM
+    orderdetails o
+        JOIN
+    Products p ON o.productCode = p.productCode
+GROUP BY o.productCode
+HAVING SUM(o.quantityOrdered) > MAX(o.quantityOrdered);
