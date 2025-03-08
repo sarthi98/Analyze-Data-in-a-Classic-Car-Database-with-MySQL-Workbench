@@ -1,5 +1,4 @@
-/* 2 Max quantity product */
-
+/*  Max quantity product */
 
 SELECT 
     COUNT(o.orderNumber),
