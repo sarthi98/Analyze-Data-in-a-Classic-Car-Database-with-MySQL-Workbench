@@ -1,4 +1,4 @@
-/*  3 Total orders of each one type */
+/*  Total orders of each one type */
 
 
 SELECT p.productLine, COUNT(o.orderNumber) AS order_count
