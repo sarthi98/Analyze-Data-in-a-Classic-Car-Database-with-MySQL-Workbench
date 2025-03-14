@@ -1,4 +1,4 @@
-Created Data analysis project for Classic Car sales , Database with MySQL Workbench.
+#Created Data analysis project for Classic Car sales , Database with MySQL Workbench.
 
 Description /  Project Scenario –
  A Small Company , which is a retailer selling Classic cars, is facing issues in managing and 
